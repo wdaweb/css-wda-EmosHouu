@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #section01 {
+      text-align: center;
+    }
+
+    #section01 img {
+      width: 40%;
+      height: 40%;
+    }
+
+
+
+
+    #section02 {
+      display: flex;
+      text-align: left;
+    }
+
+    .html {
+      display: block;
+      /* 將圖片設定為區塊元素 */
+      margin: 0 auto;
+      /* 設定左右邊緣為 'auto' 以水平置中對齊 */
+    }
+
+    #section03 {
+      text-align: left;
+    }
+
+    .css {
+      display: block;
+      /* 將圖片設定為區塊元素 */
+      margin: 0 auto;
+      /* 設定左右邊緣為 'auto' 以水平置中對齊 */
+    }
+
+    section {
+
+      border-bottom: 1px solid gray;
+    }
+
+    @media (min-width: 576px) {
+      .text {
+        display: none;
+      }
+
+      section {
+
+        border-bottom: none;
+        position: absolute;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+
+      }
+
+
+
+      #section01 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #section02::after {
+        content: '';
+        height: 1px;
+        width: 300%;
+        transform: rotate(15deg);
+        position: absolute;
+        background: gray;
+        top: 55%;
+        left: 70%;
+      }
+
+      #section03::after {
+        content: '';
+        height: 1px;
+        width: 120%;
+        transform: rotate(30deg);
+        position: absolute;
+        background: gray;
+        top: 55%;
+        left: 70%;
+      }
+
+      #section04::after {
+        content: '';
+        height: 1px;
+        width: 270%;
+        transform: rotate(348deg);
+        position: absolute;
+        background: gray;
+        top: 35%;
+        left: 70%;
+      }
+
+      #section05::after {
+        content: '';
+        height: 1px;
+        width: 190%;
+        transform: rotate(294deg);
+        position: absolute;
+        background: gray;
+        top: -36%;
+        left: 34%;
+      }
+
+      #section06::after {
+        content: '';
+        height: 1px;
+        width: 150%;
+        transform: rotate(332deg);
+        position: absolute;
+        background: gray;
+        top: 70%;
+        left: -150%;
+      }
+
+      #section07::after {
+        content: '';
+        height: 1px;
+        width: 200%;
+        transform: rotate(190deg);
+        position: absolute;
+        background: gray;
+        top: 38%;
+        left: -230%;
+      }
+
+      #section08::after {
+        content: '';
+        height: 1px;
+        width: 180%;
+        transform: rotate(50deg);
+        position: absolute;
+        background: gray;
+        top: -50%;
+        left: -90%;
+      }
+
+
+
+      #section01 img {
+        width: 200px;
+        height: 200px;
+      }
+
+      #section02 {
+        top: 3%;
+        left: 2%;
+      }
+
+      #section02 img {
+        width: 150px;
+        height: 250px;
+      }
+
+      section h1 {
+        text-align: center;
+      }
+
+      #section03 {
+        top: -2%;
+        left: 26%;
+      }
+
+      #section03 img {
+        width: 150px;
+        height: 250px;
+      }
+
+      #section04 {
+        top: 40%;
+        left: 12%;
+      }
+
+      #section04 img {
+        width: 150px;
+        height: 250px;
+      }
+
+      #section05 {
+        top: 73%;
+        left: 30%;
+      }
+
+      #section05 img {
+        width: 150px;
+        height: 120px;
+      }
+
+      #section06 {
+        top: 10%;
+        left: 72%;
+      }
+
+      #section06 img {
+        width: 150px;
+        height: 120px;
+      }
+
+      #section07 {
+        top: 38%;
+        left: 86%;
+      }
+
+      #section07 img {
+        width: 150px;
+        height: 120px;
+      }
+
+      #section08 {
+        top: 73%;
+        left: 66%;
+      }
+
+      #section08 img {
+        width: 150px;
+        height: 120px;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <section id="section01">
+    <div>
+      <img class="wda" src="./img/wda.png" alt="">
+      <h1>泰山職訓局</h1>
+      <h2>從零開始的網站設計課程</h2>
+      <span>轉職網頁開發人員 掌握就業必備職能</span><br>
+      <span>由淺入深學習技術 強化職場的競爭力</span>
+
+    </div>
+  </section>
+  <section id="section02">
+    <div>
+      <img class="html" src="./img/html.png" alt="">
+      <h1>Html</h1>
+      <p class="text">超文本標記語言(英語:HyperText Markup Language，簡稱:HTML)是一種用於建立網頁的標準標記語言。 HTML 是一種基礎技術，常與 CSS、JavaScript
+        一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行 動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML 檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站
+        的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+      </p>
+
+    </div>
+  </section>
+
+  <section id="section03">
+    <div>
+      <img class="css" src="./img/css.png" alt="">
+      <h1>CSS</h1>
+      <p class="text">層疊樣式表(英語:Cascading Style Sheets，簡寫CSS)，又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件(如 HTML 文件或 XML
+        應用)添加樣式(字型、間距和顏色等)的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。
+      </p>
+
+    </div>
+  </section>
+
+  <section id="section04">
+    <div>
+      <img class="js" src="./img/js.png" alt="">
+      <h1>JavaScript</h1>
+      <p class="text">層疊樣式表(英語:Cascading Style Sheets，簡寫CSS)，又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件(如 HTML 文件或 XML
+        應用)添加樣式(字型、間距和顏色等)的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。
+      </p>
+
+    </div>
+  </section>
+
+  <section id="section05">
+    <div>
+      <img class="jq" src="./img/jq.png" alt="">
+      <h1>jquery</h1>
+      <p class="text">層疊樣式表(英語:Cascading Style Sheets，簡寫CSS)，又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件(如 HTML 文件或 XML
+        應用)添加樣式(字型、間距和顏色等)的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。
+      </p>
+
+    </div>
+  </section>
+
+  <section id="section06">
+    <div>
+      <img class="boot" src="./img/bs.png" alt="">
+      <h1>Bootstrap</h1>
+      <p class="text">層疊樣式表(英語:Cascading Style Sheets，簡寫CSS)，又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件(如 HTML 文件或 XML
+        應用)添加樣式(字型、間距和顏色等)的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。
+      </p>
+
+    </div>
+  </section>
+
+  <section id="section07">
+    <div>
+      <img class="sass" src="./img/sass.png" alt="">
+      <h1>Sass</h1>
+      <p class="text">層疊樣式表(英語:Cascading Style Sheets，簡寫CSS)，又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件(如 HTML 文件或 XML
+        應用)添加樣式(字型、間距和顏色等)的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。
+      </p>
+
+    </div>
+  </section>
+
+  <section id="section08">
+    <div>
+      <img class="vue " src="./img/vue.png" alt="">
+      <h1>Vue</h1>
+      <p class="text">層疊樣式表(英語:Cascading Style Sheets，簡寫CSS)，又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣 式表，一種用來為結構化文件(如 HTML 文件或 XML
+        應用)添加樣式(字型、間距和顏色等)的電腦語言，由 W3C 定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3 現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。
+      </p>
+
+    </div>
+  </section>
+</body>
+
+</html>
